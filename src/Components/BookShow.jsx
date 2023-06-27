@@ -19,7 +19,7 @@ function BookShow({ book, onDelete, onEdit }) {
 
   let booktitle = <h3>{book.title}</h3>;
   if (editBook) {
-    booktitle = <BookEdit book={book} key={book.id} onSubmit={handleSubmit} />;
+    booktitle = <BookEdit book={book} onSubmit={handleSubmit} />;
   }
 
   return (
